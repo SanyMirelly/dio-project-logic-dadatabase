@@ -2,9 +2,9 @@
 
 Este repositório faz parte de um Desafio de Projeto Lógico de Banco de Dados da DIO, focado em um cenário de e-commerce. A ideia foi pegar o modelo conceitual inicial e refiná-lo até chegar a um esquema lógico robusto, que pudesse ser testado com queries mais complexas dos que apresentadas durante a explicação do desafio.
 
-## Diagrama Entidade-Relacionamento (ER)
+## Diagrama E-commerce
 
-É uma representação visual de como podemos analisar entidades e atributos, em um banco de dados, se relacionando entre si.
+É um fluxograma usado para modelar a estrutura de um banco de dados, podendo analisar entidades e atributos se relacionando entre si.
 
 ![ecommerce](https://github.com/SanyMirelly/dio-project-logic-dadatabase/blob/main/ecommerce_relational_schema.png)
 
@@ -15,7 +15,7 @@ O projeto está dividido em três scripts SQL principais:
 2.  **`dados_projeto.sql`**: Contém o código DML para preencher o banco de dados com dados de exemplos, possibilitando testes eficazes das consultas e o retorno de dados úteis
 3.  **`consulta_dados.sql`**: Apresenta consultas SQL elaboradas para responder a perguntas de negócio. As queries utilizam cláusulas como `SELECT`, `WHERE`, `ORDER BY`, `INNER JOIN`, `GROUP BY` e `HAVING` para obter insights estratégicos dos dados.
 
-## 🔍Consultas do Banco de Dados
+## 🔍Consultas dos Dados
 
 As seguintes perguntas foram formuladas e respondidas com SQL no arquivo `consulta_dados.sql`:
 
@@ -70,6 +70,6 @@ select s.SocialName as Fornecedor, sum(ps.quantity) as Total_Fornecido from supp
 ```
 ![Clientes x pedidos](https://github.com/SanyMirelly/dio-project-logic-dadatabase/blob/main/Consultas/Pergunta_5.png)
 
-## Observações Finais
+## Considerações
 
 O projeto foi desenvolvido para cumprir os requisitos do desafio e, simultaneamente, replicar um ambiente próximo à realidade de um e-commerce. A intenção é que o banco de dados funcione como alicerce para análises e relatórios detalhados, ilustrando o potencial do SQL na transformação de dados em insights valiosos.
